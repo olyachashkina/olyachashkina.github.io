@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+  </head>
+
+  <body>
+    <h1>Hello Plunker!</h1>
+   <p> мои макросы:</p>
+1) сайт ("lalalalala")
+Sub сайт()
+<br>
+'
+' сайт Макрос
+'
+' Сочетание клавиш: Ctrl+й
+'
+If Worksheets(ActiveSheet.Name).Name = "Лист1" Then
+ActiveCell.FormulaR1C1 = "lalalalala"
+End If
+2) макрос 3 (меняет "lalalalala" на "123")
+Sub Макрос3()
+'
+' Макрос3 Макрос
+'
+' Сочетание клавиш: Ctrl+л
+'
+    Cells.Replace What:="lalalalala", Replacement:="123", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+End Sub
+3) макрос 4 (курсив и жирный шрифт)
+Sub Макрос4()
+'
+' Макрос4 Макрос
+'
+' Сочетание клавиш: Ctrl+о
+'
+    Selection.Font.Bold = True
+    Selection.Font.Italic = True
+End Sub
+  </body>
+</html>
