@@ -1,5 +1,3 @@
-<!doctype html>
-
 <html>
   <head>
     <link rel="stylesheet" href="lib/style.css">
@@ -9,39 +7,39 @@
   <body>
     <h1>Hello Plunker!</h1>
    <p> мои макросы:</p>
-<p>1) сайт ("lalalalala")</p>
+<p>1) сайт (вставляет записанный текст "lalalalala" в выделенную ячейку)     </p>
 Sub сайт()
 <br>
-'
-' сайт Макрос
-'
-' Сочетание клавиш: Ctrl+й
-'
-If Worksheets(ActiveSheet.Name).Name = "Лист1" Then
-ActiveCell.FormulaR1C1 = "lalalalala"
-End If
+'<br>
+' сайт Макрос<br>
+'<br>
+' Сочетание клавиш: Ctrl+й<br>
+'<br>
+If Worksheets(ActiveSheet.Name).Name = "Лист1" <br>
+ActiveCell.FormulaR1C1 = "lalalalala"<br>
+End If<br>
 <p>2) макрос 3 (меняет "lalalalala" на "123")</p>
 Sub Макрос3()
 <br>
-'
-' Макрос3 Макрос
-'
-' Сочетание клавиш: Ctrl+л
-'
-    Cells.Replace What:="lalalalala", Replacement:="123", LookAt:=xlPart, _
-        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
-        ReplaceFormat:=False
-End Sub
+'<br>
+' Макрос3 Макрос<br>
+'<br>
+' Сочетание клавиш: Ctrl+л<br>
+'<br>
+    Cells.Replace What:="lalalalala", Replacement:="123",<br> LookAt:=xlPart, _<br>
+        SearchOrder:=xlByRows, MatchCase:=False, <br>SearchFormat:=False, _<br>
+        ReplaceFormat:=False<br>
+End Sub<br>
 <p>3) макрос 4 (курсив и жирный шрифт)</p>
 Sub Макрос4()
 <br>
-'
-' Макрос4 Макрос
-'
-' Сочетание клавиш: Ctrl+о
-'
-    Selection.Font.Bold = True
-    Selection.Font.Italic = True
-End Sub
+'<br>
+' Макрос4 Макрос<br>
+'<br>
+' Сочетание клавиш: Ctrl+о<br>
+'<br>
+    Selection.Font.Bold = True<br>
+    Selection.Font.Italic = True<br>
+End Sub<br>
   </body>
 </html>
