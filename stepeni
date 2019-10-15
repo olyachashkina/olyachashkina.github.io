@@ -1,0 +1,24 @@
+a=a*a;
+document.getElementById("inf2").innerHTML ="<p>"+"a^6="+a+"</p>" ;
+a=b
+a=a*a;
+a=
+
+document.getElementById("inf3").innerHTML ="<p>"+"a^7"+"</p>";
+}
+</script>
+</head>
+<body>
+<button onclick="er()">1.61</button>
+<br>
+<br>
+a=)<input type="text" value="" id="var_in">
+<br>
+<br>
+
+<div id="inf1"></div>
+<div id="inf2"></div>
+<div id="inf3"></div>
+</body>
+</html>
+
