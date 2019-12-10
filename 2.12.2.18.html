@@ -1,0 +1,195 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>Стили</title>
+  <style>
+    @font-face {
+      font-family: "Fairy";
+      src: url(https://olyachashkina.github.io/18223.ttf);
+    }
+    
+    body {
+      display: inline-block;
+      flex-wrap: wrap;
+      align-content: space-between;
+      overflow: hidden;
+      background: linear-gradient(45deg, blue, gold, lightgreen, gold, red);
+      mix-blend-mode: multiply;
+    }
+    
+    .gradient {
+      text-align: left;
+      font-size: 32px;
+      font-family: Fairy;
+      letter-spacing: 5px;
+    }
+    
+    .spotlight {
+      background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: rainbow_animation 6s ease-in-out infinite;
+      background-size: 400% 100%;
+    }
+    
+    @keyframes rainbow_animation {
+      0%, 100% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 100% 0;
+      }
+    }
+    
+    a.button8 {
+      display: inline-block;
+      padding: 0.2em 1.45em;
+      margin: 0.1em;
+      border: 0.15em solid #CCCCCC;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Fairy';
+      font-weight: 400;
+      color: #000000;
+      background-color: #CCCCCC;
+      text-align: center;
+      position: relative;
+    }
+    
+    a.button8:hover {
+      border-color: #7a7a7a;
+      position: relative;
+    }
+    
+    a.button8:active {
+      background-color: #999999;
+      position: relative;
+    }
+    
+    @media all and (max-width:30em) {
+      a.button8 {
+        display: block;
+        margin: 0.2em auto;
+      }
+      .layer1 {
+        position: fixed;
+      }
+    }
+  </style>
+  <script>
+    function er() {
+      var ab = Number(document.getElementById("var_in").value);
+document.getElementById("inf1").innerHTML ="";
+      document.getElementById("inf1").innerHTML = 
+      "десятков " + (ab - ab % 10) / 10 + 
+      "<br>единиц " + ab % 10 + "<br>их сумма=" + 
+      (ab % 10 + (ab - ab % 10) / 10) + "<br>их произведение=" +
+      (ab % 10 * (ab - ab % 10) / 10);
+    }
+
+    function er1() {
+      var abc = document.getElementById("var_in").value;
+document.getElementById("inf1").innerHTML = "";
+      document.getElementById("inf1").innerHTML = 
+      "единиц " + abc % 10 + 
+      "<br>десятков " + ((abc - abc % 10) / 10 - (abc - abc % 100) / 10) +
+      "<br>сотен " + (abc - abc % 100) / 100 + 
+      "<br>их сумма=" +
+      ((abc - abc % 100) / 100 + ((abc - abc % 10) / 10 - (abc - abc % 100) / 10) + (abc % 10)) +
+      "<br>их произведение=" + 
+      (((abc - abc % 100) / 100) * ((abc - abc % 10) / 10 - (abc - abc % 100) / 10) * (abc % 10))
+      ;
+    } 
+    
+    function er4() {
+      var abc = document.getElementById("var_in").value;
+      var q = abc % 10  
+      var w = ((abc - abc % 10) / 10 - (abc - abc % 100) / 10) 
+      var e = (abc - abc % 100) / 100 
+       document.getElementById("inf1").innerHTML = "справа налево" + q + w + e;
+      
+      
+      
+    }
+    function er5() {
+      var abc = document.getElementById("var_in").value;
+      var q = abc % 10  
+      var w = ((abc - abc % 10) / 10 - (abc - abc % 100) / 10) 
+      var e = (abc - abc % 100) / 100 
+       document.getElementById("inf1").innerHTML = "получается" + w + q + e;
+      
+      
+      
+    }
+    function er6() {
+      var abc = document.getElementById("var_in").value;
+      var q = abc % 10  
+      var w = ((abc - abc % 10) / 10 - (abc - abc % 100) / 10) 
+      var e = (abc - abc % 100) / 100 
+       document.getElementById("inf1").innerHTML = "получается" + q + e + w;
+      
+      
+      
+    }
+    function er7() {
+      var abc = document.getElementById("var_in").value;
+      var q = abc % 10  
+      var w = ((abc - abc % 10) / 10 - (abc - abc % 100) / 10) 
+      var e = (abc - abc % 100) / 100 
+       document.getElementById("inf1").innerHTML = "получается" + w + e + q;
+      
+      
+      
+    }
+    function er8() {
+      var abc = document.getElementById("var_in").value;
+      var q = abc % 10  
+      var w = ((abc - abc % 10) / 10 - (abc - abc % 100) / 10) 
+      var e = (abc - abc % 100) / 100 
+       document.getElementById("inf1").innerHTML = "получается" + e + q + w;
+      
+      
+      
+    }
+    function er9() {
+      var abc = document.getElementById("var_in").value;
+      var q = abc % 10  
+      var w = ((abc - abc % 10) / 10 - (abc - abc % 100) / 10) 
+      var e = (abc - abc % 100) / 100 
+       document.getElementById("inf1").innerHTML = "получается" + e + q + w +
+       "<br>" + w + e + q + "<br>" + q + e + w + "<br>" + w + q + e + "<br>" +
+      q + w + e + "<br>" + e + w + q;
+       
+       
+      
+      
+      
+    }
+      
+  
+  </script>
+</head>
+
+<body>
+  <a class="button8" onclick="er()">2.10</a>
+  <a class="button8" onclick="er1()">2.12</a>
+    <a class="button8" onclick="er4()">2.13</a>
+    <a class="button8" onclick="er5()">2.14</a>
+    <a class="button8" onclick="er6()">2.15</a>
+     <a class="button8" onclick="er7()">2.16</a>
+     <a class="button8" onclick="er8()">2.17</a>
+     <a class="button8" onclick="er9()">2.18</a>
+  <a class="button8" onclick="er3()">Любая</a>
+  <div class="layer1">
+    <input type="text" value="57" id="var_in">
+    <br>
+  </div>
+  <div class="gradient">
+    <div class="spotlight" data-text="" id="inf1"></div>
+  </div>
+
+</body>
+
+</html>
