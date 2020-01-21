@@ -1,0 +1,60 @@
+<!doctype html>
+
+<style>
+   p {background-color: #fff;
+        margin: 20px auto;
+        font-family: Arial;
+        font-size: 2em; 
+        text-transform: uppercase;
+        color: rgba(0,168,255,0.5);
+        text-shadow: 8px 8px 0 rgba(255,0,180,0.5);}
+</style>
+
+<html>
+
+<head>
+  
+  <script>
+    function nomA() {
+      var i = 20;
+while (i < 36) {
+
+        document.getElementById("inf1").innerHTML += i + "<br>"
+        i++
+      }
+    }
+
+    function nomB() {
+    
+      document.getElementById("inf1").innerHTML = ""
+      var b = document.getElementById("input_b").value;
+      if (b < 10) {
+        document.getElementById("inf1").innerHTML = "Введите число, большее или равное 10!"
+      } else {
+        for (var i = 10; i <= b; i++) {
+          document.getElementById("inf1").innerHTML += i * i + "<br>"
+        }
+      }
+    }
+
+    
+
+  
+  </script>
+</head>
+
+<body>
+  <a class="button8" onclick="nomA()">А</a>
+  <a class="button8" onclick="nomB()">Б</a>
+  <div class="layer1" 
+    
+    b:
+    <input type="text" value="12" id="input_b">
+    <br>
+  </div>
+  <div class="gradient">
+    <div class="spotlight" data-text="" id="inf1"></div>
+  </div>
+</body>
+
+</html>
